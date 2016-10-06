@@ -7,3 +7,20 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'reset';
 
 // @import 'adonis';
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: pink;
+}
+
+.nav-bar {
+  background: yellow;
+  display: flex;
+
+&__item {
+  flex-direction: column;
+
+}
+}
