@@ -13,14 +13,82 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-direction: column;
   min-height: 100vh;
   background: pink;
+  font-family: "Source Sans Pro", sans-serif;
+
+  &__content {
+    flex-grow: 1;
+  }
 }
 
 .nav-bar {
-  background: yellow;
   display: flex;
+  background: navy;
+  width: 100%;
 
-&__item {
-  flex-direction: column;
+  &__links {
+    color: #fff;
+    text-decoration: none;
+}
+  &__item {
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+
+    &--logo {
+      color: #fff;
+      text-align: left;
+      padding: 1rem;
+      flex-grow: 1;
+    }
+    }
+}
+.hero {
+  display: flex;
+  height: 22rem;
+  position: relative;
+  width: 100%;
 
 }
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+  background: orange;
+  color: transparent;
+  width: calc(100% * 4 / 1rem - 1rem);
+
+}
+
+.portfolio__content {
+  // padding: 3rem;
+  display: flex;
+
+  &--project {
+    border: 1rem solid black;
+    background: green;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: -1rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+
+    .image {
+      text-align: left;
+      max-height: 20%;
+      height: 2rem;
+    }
+  }
+}
+
+.bottom__nav {
+  background: blue;
+  height: 3rem;
 }
