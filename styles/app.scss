@@ -65,11 +65,8 @@ h1 {
   background: orange;
   color: transparent;
   width: calc(100% * 4 / 1rem - 1rem);
-
 }
-
 .portfolio__content {
-  // padding: 3rem;
   display: flex;
 
   &--project {
