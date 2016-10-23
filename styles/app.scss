@@ -12,80 +12,117 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: pink;
   font-family: "Source Sans Pro", sans-serif;
 
   &__content {
-    flex-grow: 1;
+    // flex-grow: 1;
   }
 }
 
 .nav-bar {
-  display: flex;
-  background: navy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /* display: flex; */
+  background: #2c3e4e;
   width: 100%;
-
-  &__links {
-    color: #fff;
-    text-decoration: none;
+  /* flex-grow: 2; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
 }
-  &__item {
-    color: #fff;
-    display: inline-block;
-    font-size: 1rem;
-    text-align: right;
-    padding-right: 1rem;
 
-    &--logo {
-      color: #fff;
-      text-align: left;
-      padding: 1rem;
-      flex-grow: 1;
-    }
-    }
+.nav-bar__links {
+  /* padding-left: 0; */
+  list-style: none;
+  padding: 0;
+  /* width: 50%; */
+  /* text-align: left; */
+  display: flex;
 }
+
+.nav-bar__item a {
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-bar__item--logo {
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
 .hero {
   display: flex;
-  height: 22rem;
+  flex-direction: column;
+  height: 12rem;
   position: relative;
   width: 100%;
+  background: rgba(42, 129, 180, 1.0);
 
 }
 
-h1 {
+.hero-headline {
   text-align: center;
   color: #fff;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
-.container {
-  max-width: 65rem;
-  margin: 0 auto;
-  background: orange;
-  color: transparent;
-  width: calc(100% * 4 / 1rem - 1rem);
+.hero-subtitle {
+  text-align: center;
 }
+
+.container {
+  margin: 0 auto;
+  // width: calc(100% * 4 / 1rem - 1rem);
+}
+
+.container-title {
+  text-align: center;
+}
+
 .portfolio__content {
   display: flex;
+  max-width: 50rem;
+  flex-direction: column;
+  margin-left: 15rem;
 
   &--project {
-    border: 1rem solid black;
-    background: green;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: -1rem;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 
-    .image {
-      text-align: left;
-      max-height: 20%;
-      height: 2rem;
+    &:last-child {
+      margin-bottom: 2rem;
     }
+
   }
 }
 
+    .porfolio__content-image {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 5rem;
+    }
+
+
 .bottom__nav {
-  background: blue;
-  height: 3rem;
+  background: rgba(34, 34, 34, 1.0);
+  color: #fff;
+
+  text-align: center;
+}
+
+.bottom__nav--icons {
+  padding-top: 1rem;
+  height: 5rem;
+  font-size: 30px;
+}
+
+.bottom__nav--logo {
+  height: 2rem;
+
 }
