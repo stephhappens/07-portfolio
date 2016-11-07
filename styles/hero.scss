@@ -1,0 +1,21 @@
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  position: relative;
+  width: 100%;
+  background: rgba(42, 129, 180, 1.0);
+
+}
+
+.hero-headline {
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  text-align: center;
+}
