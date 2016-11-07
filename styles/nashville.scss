@@ -16,10 +16,14 @@
     bottom: 35rem;
     font-size: 3rem;
     font-weight: bold;
+    visibility: hidden;
+
+    &:hover {
+      visibility: visible;
+    }
 }
 
 .row {
-  margin: -1rem;
   display: flex;
   flex-wrap: wrap;
 }

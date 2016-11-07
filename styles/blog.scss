@@ -10,27 +10,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-family: "Source Sans Pro", sans-serif;
 
   &__content {
-    // flex-grow: 1;
   }
 }
 
 .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  /* display: flex; */
   background: #2c3e4e;
   width: 100%;
-  /* flex-grow: 2; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
 }
 
 .nav-bar__links {
-  /* padding-left: 0; */
   list-style: none;
   padding: 0;
-  /* width: 50%; */
-  /* text-align: left; */
   display: flex;
 }
 
@@ -50,32 +40,36 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-grow: 1;
 }
 
+.section {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
 
 .blog-container {
-  max-width: 50%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    margin: 1rem;
-    width: calc(100% / 2 - 1rem - 1rem);
-    float: left;
-    padding-right: 4rem;
-  }
+  display: flex;
+  max-width: 65rem;
+  margin: 0 auto;
+}
 
 .profile_user {
-  overflow: auto;
-  margin-right: -3rem;
-  margin-left: -2.5rem;
+  position: relative;
   background: rgba(231, 74, 66, 1.0);
 }
 
 .blog {
-  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
-  color: white;
-  display: inline-block;
+  flex-basis: calc(100% / 2 - 1rem - 1rem);
+  flex-grow: 1;
+  margin: 1rem;
 
-  padding-right: 3rem;
-  margin-left: 25%;
-  margin-bottom: 3rem;
+  color: white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
  }
 
 .image {
@@ -87,13 +81,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .week {
-      color: white;
-       background: #2c3e4e;
-       position: absolute;
-      transform: translate(-50%, -50%);
-      margin-left: 12rem;
-      padding: 1rem;
-      box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+  color: white;
+  background: #2c3e4e;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .blogtitle {
@@ -107,6 +102,7 @@ font-weight: 300;
 
 .blogcontent {
 color: black;
+padding: 0.5rem;
 padding-top: 1.5rem;
 }
 
