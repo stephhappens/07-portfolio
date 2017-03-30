@@ -1,0 +1,87 @@
+
+.portfolio_images {
+  display: block;
+  width: 100%;
+  &:hover {
+    background: rgba(42, 129, 180, 1.0);
+    opacity: .7;
+    filter: grayscale(100%);
+  }
+}
+
+.portfolio_images-description {
+    color: #323232;
+    opacity: 1;
+    position: relative;
+    bottom: 35rem;
+    font-size: 3rem;
+    font-weight: bold;
+    visibility: hidden;
+
+    &:hover {
+      visibility: visible;
+    }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  min-width: 16rem;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+.column.is-third {
+  width: calc(100% / 3 - 2rem);
+}
+
+.column.is-two-third {
+  width: calc(100% * 2 / 3 - 2rem);
+}
+
+.column.is-half {
+  width: calc(100% / 2 - 2rem);
+}
+
+.column.is-full {
+  width: calc(100% / 1 - 2rem);
+}
+
+.frame {
+  border: 0.5rem white solid;
+  position: relative;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+  min-height: 20rem;
+}
+
+
+.four-three::before {
+  display: block;
+  content: "";
+  padding-top: calc(100% * 3 / 4);
+}
+.eight-three::before {
+  display: block;
+  content: "";
+  padding-top: calc(100% * 3 / 8);
+}
+
+.frame img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
